@@ -1,14 +1,12 @@
 #include <unistd.h>
 
-void print_bits(unsigned char octet)
+void	print_bits(unsigned char octet)
 {
-	int i = 7;
-	while (i >= 0)
+    int maxbits = 8;
+    unsigned char bit;
+    while (maxbits--)
 	{
-		if (octet && (1 << i))
-			write(1, "1", 1);
-		else
-			write(1, "0", 1);
-		i--;
-	}
+        bit = (octet >> maxbits & 1) + '0';
+        write(1, &bit, 1);
+    }
 }
