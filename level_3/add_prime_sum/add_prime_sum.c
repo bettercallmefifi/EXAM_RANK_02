@@ -54,7 +54,7 @@ int ft_isprime(int n)
 	int div = 2;
 	if (n < 0)
 		return (0);
-	while (div <= n / 2)
+	while (n / 2 >= div)
 	{
 		if (n % div == 0)
 			return (0);
