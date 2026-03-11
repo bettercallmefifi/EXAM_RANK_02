@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 	{
 		while (argv[1][i] == 32 || (argv[1][i] >= 9 && argv[1][i] <= 13))
 			i++;
-		while ((argv[1][i] >= 'a' && argv[1][i] <= 'z') || (argv[1][i] >= 'A' && argv[1][i] <= 'Z'))
+		while (!(argv[1][i] == 32 || (argv[1][i] >= 9 && argv[1][i] <= 13)))
 			{
 				write(1, &argv[1][i] ,1 );
 				i++;

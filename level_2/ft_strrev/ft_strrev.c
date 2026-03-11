@@ -5,7 +5,7 @@ char *ft_strrev(char *str)
 	char tmp;
 	while(str[len])
 		len++;
-	while (len /2 > i)
+	while (len / 2 > i)
 	{
 		tmp = str[i];
 		str[i] = str[len - 1];
