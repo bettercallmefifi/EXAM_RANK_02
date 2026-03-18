@@ -4,7 +4,7 @@ unsigned int lcm(unsigned int a, unsigned int b)
 	if (a == 0 || b == 0)
 		return (0);
 	if (a > b)
-		n = 1;
+		n = a;
 	else
 		n = b;
 	while (1)
